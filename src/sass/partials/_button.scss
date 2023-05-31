@@ -14,11 +14,11 @@
   line-height: 24px;
 
   &:hover {
-    background: $color-hover-theme;
+    background: $color-theme-hover;
     cursor: pointer;
   }
   &:focus {
-    background: $color-focus-theme;
+    background: $color-theme-focus;
   }
 }
 .button--order {
@@ -37,5 +37,5 @@
 .button--subscribe-mobile {
   padding: 8px 39.5px;
 
-  font-size: $fontsize-M;
+  font-size: $fontsize-m;
 }
