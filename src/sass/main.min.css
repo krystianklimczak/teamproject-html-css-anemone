@@ -1,25 +1,20 @@
 .button {
-  background: $color-theme;
-
+  background: #e86f54;
   border: none;
   border-radius: 38px;
-
   padding-top: 20px;
   padding-bottom: 20px;
-
-  color: $color-highlight;
-
-  font-size: $fontsize-minor;
+  color: #fff;
+  font-size: 28px;
   font-weight: 500;
   line-height: 24px;
-
-  &:hover {
-    background: $color-hover-theme;
-    cursor: pointer;
-  }
-  &:focus {
-    background: $color-focus-theme;
-  }
+}
+.button:hover {
+  background: #e25b41;
+  cursor: pointer;
+}
+.button:focus {
+  background: #fa6f54;
 }
 .button--order {
   padding-left: 43.5px;
@@ -31,11 +26,9 @@
 }
 .button--order-mobile {
   padding: 10px 35px;
-
-  font-size: $fontsize-standard;
+  font-size: 20px;
 }
 .button--subscribe-mobile {
   padding: 8px 39.5px;
-
-  font-size: $fontsize-M;
-}
+  font-size: 18px;
+} /*# sourceMappingURL=main.min.css.map */
