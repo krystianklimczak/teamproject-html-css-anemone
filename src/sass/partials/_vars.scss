@@ -1,16 +1,16 @@
 // colors
 $color-logo: #0e0e0e;
-$color-highlight: #ffffff;
-$color-main-text: #000000;
+$color-primary-light: #ffffff;
+$color-text-main: #000000;
 $color-theme: #e86f54;
-$color-hover-theme: #e25b41;
-$color-focus-theme: #fa6f54;
-$color-modal-text: #5c5c5c;
+$color-theme-hover: #e25b41;
+$color-theme-focus: #fa6f54;
+$color-text-modal: #5c5c5c;
 $color-validation-success: #3cbc81;
 $color-validation-denied: #e74a3b;
 // Font
-$font-main: 'Montserrat';
-$font-footer: 'Inter';
+$font-primary: 'Montserrat';
+$font-secondary: 'Inter';
 // Font Size Mobile (mainly)
 $fontsize-pageTitle-mobile: 52px;
 $fontsize-pageTitle-tablet: 120px;
@@ -29,7 +29,7 @@ $fontsize-sectionTitle: 44px; //tylko tablet i desktop
 $fontsize-L: 32px;
 $fontsize-XL: 36px;
 // Font Weight
-$fontweight-XS: 400;
-$fontweight-S: 500;
-$fontweight-M: 600;
-$fontweight-L: 700;
+$fontweight-xs: 400;
+$fontweight-s: 500;
+$fontweight-m: 600;
+$fontweight-l: 700;
