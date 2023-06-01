@@ -1,0 +1,52 @@
+.footer{
+    background-color: $color-text-main;
+    color:$color-primary-light;
+    font-family:$font-secondary;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+    }
+    &__header{
+        font-size:18px;
+        font-weight:$fontweight-l;
+    }
+    &__item{
+        font-size:14px;
+        font-weight:$fontweight-s;
+        &--transfer{
+            display:flex;
+            @media (min-width: 768px)
+             {
+              display: inline;
+            }
+        }
+    }
+    &__list{
+        display:flex;
+        flex-direction: column;
+        gap:12px;
+    }
+    &__link{
+        color:$color-primary-light;
+
+    }
+   
+}
+.media{
+    display:flex;
+    flex-direction: row;
+    gap:16px;
+    &__item{
+        cursor:pointer;
+    }
+}
+.content{   
+        width: calc(50% - 15px);
+        display:flex;
+        flex-direction: column;
+        gap:18px;
+}
