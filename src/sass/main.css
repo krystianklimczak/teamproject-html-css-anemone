@@ -277,14 +277,6 @@ body {
   }
 }
 
-::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-::placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
 .label {
   display: flex;
   flex-direction: column;
@@ -333,6 +325,12 @@ body {
     line-height: 1.21;
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .label__input::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+  .label__input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 
