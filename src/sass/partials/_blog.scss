@@ -31,50 +31,28 @@
     }     
 }
 
-// carousel style
-.carousel {
+// swiper style
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
     display: flex;
     justify-content: center;
-    gap: 31px;
-   
-     // mobile
-     @media  screen and (max-width: 767px) {
-        margin-bottom: 4px; 
-    }
-    // tablet
-    @media  screen and (min-width: 768px) {
-        margin-bottom: 8px;
-    }
-    // desktop
-    @media  screen and (min-width: 1280px) {
-        margin-bottom: 18px; 
-    }
+    align-items: center;
+  }
 
-    // image dimensions
-    &__picture {
-        height: auto;
-
-          // mobile
-     @media  screen and (max-width: 767px) {
-        max-width: 136px;
-    }
-    // tablet
-    @media  screen and (min-width: 768px) {
-        max-width: 344px;
-    }
-    // desktop
-    @media  screen and (min-width: 1280px) {
-        max-width: 390px;
-    }
-    }
-
-    // carousel pagination
-    &__pagination {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-    }
-}
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 // animation aos
 [data-aos="new-animation"] {
