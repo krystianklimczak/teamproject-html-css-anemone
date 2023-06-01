@@ -11,24 +11,57 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class=" swiper-slide">
-                    <img src="./images/blog-flowers-green-d@1x.jpg" width="390" height="421" alt="demo">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/blog-flowers-pink-d@1x.jpg" width="390" height="421" alt="demo">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/blog-flowers-blue-d@1x.jpg" width="390" height="421" alt="demo">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/blog-flowers-orange-d@1x.jpg" width="390" height="421" alt="demo">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/blog-flowers-red-d@1x.jpg" width="390" height="421" alt="demo">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/blog-flowers-yellow-d@1x.jpg" width="390" height="421" alt="demo">
-                </div>
+                <!-- green flowers -->
+                <picture class=" swiper-slide">
+                    <source srcset="./images/blog-flowers-green-d@1x.jpg 1x, ./images/blog-flowers-green-d@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 1280px)">
+                    <source srcset="./images/blog-flowers-green-t@1x.jpg 1x, ./images/blog-flowers-green-t@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 768px)">
+                    <source srcset="./images/blog-flowers-green-m@1x.jpg 1x, ./images/blog-flowers-green-m@2x.jpg 2x"
+                        type="image/jpeg" media="(max-width: 767px)">
+                    <img src="./images/blog-flowers-green-d@1x.jpg" width="390" height="421" alt="blog-flowers-green">
+                </picture>
+                <!-- pink flowers -->
+                <picture class=" swiper-slide">
+                    <source srcset="./images/blog-flowers-pink-d@1x.jpg 1x, ./images/blog-flowers-pink-d@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 1280px)">
+                    <source srcset="./images/blog-flowers-pink-t@1x.jpg 1x, ./images/blog-flowers-pink-t@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 768px)">
+                    <source srcset="./images/blog-flowers-pink-m@1x.jpg 1x, ./images/blog-flowers-pink-m@2x.jpg 2x"
+                        type="image/jpeg" media="(max-width: 767px)">
+                    <img src="./images/blog-flowers-pink-d@1x.jpg" width="390" height="421" alt="blog-flowers-pink-t">
+                </picture>
+                <!-- blue flowers -->
+                <picture class=" swiper-slide">
+                    <source srcset="./images/blog-flowers-blue-d@1x.jpg 1x, ./images/blog-flowers-blue_d@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 1280px)">
+                    <source srcset="./images/blog-flowers-blue-t@1x.jpg 1x, ./images/blog-flowers-blue-t@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 768px)">
+                    <source srcset="./images/blog-flowers-blue-m@1x.jpg 1x, ./images/blog-flowers-blue-m@2x.jpg 2x"
+                        type="image/jpeg" media="(max-width: 767px)">
+                    <img src="./images/blog-flowers-blue-d@1x.jpg" width="390" height="421" alt="blog-flowers-blue">
+                </picture>
+                <!-- orange flowers -->
+                <picture class=" swiper-slide">
+                    <source srcset="./images/blog-flowers-orange-d@1x.jpg 1x, ./images/blog-flowers-orange-d@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 1280px)">
+                    <source srcset="./images/blog-flowers-orange-t@1x.jpg 1x, ./images/blog-flowers-orange-t@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 768px)">
+                    <source srcset="./images/blog-flowers-orange-m@1x.jpg 1x, ./images/blog-flowers-orange-m@2x.jpg 2x"
+                        type="image/jpeg" media="(max-width: 767px)">
+                    <img src="./images/blog-flowers-orange-d@1x.jpg" width="390" height="421" alt="blog-flowers-orange">
+                </picture>
+                <!-- yellow flowers -->
+                <picture class=" swiper-slide">
+                    <source srcset="./images/blog-flowers-yellow-d@1x.jpg 1x, ./images/blog-flowers-yellow-d@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 1280px)">
+                    <source srcset="./images/blog-flowers-yellow-t@1x.jpg 1x, ./images/blog-flowers-yellow-t@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 768px)">
+                    <source srcset="./images/blog-flowers-yellow-m@1x.jpg 1x, ./images/blog-flowers-yellow-m@2x.jpg 2x"
+                        type="image/jpeg" media="(max-width: 767px)">
+                    <img src="./images/blog-flowers-yellow-d@1x.jpg" width="390" height="421" alt="blog-flowers-yellow">
+                </picture>
+
 
             </div>
 
@@ -51,16 +84,7 @@
                 },
             });
         </script>
-
-        <!-- <picture class="carousel">
-
-            <img class="carousel__picture" src="./images/demo.jpg" alt="demo">
-            <img class="carousel__picture" src="./images/demo.jpg" alt="demo">
-            <img class="carousel__picture" src="./images/demo.jpg" alt="demo">
-
-        </picture> -->
-
-
+        <!-- caption for newsletter -->
         <p data-aos="new-animation" class="blog__caption">Follow to our newsletter</p>
         <button data-aos="fade-up" class="button button--subscribe blog__button" data-modal-sub-open>Subscribe</button>
     </div>
