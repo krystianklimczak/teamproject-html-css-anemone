@@ -1,0 +1,45 @@
+::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: $fontweight-s;
+  font-size: 10px;
+  line-height: 1.2;
+  color: $color-text-modal;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  &__input {
+    width: 100%;
+    font-weight: $fontweight-s;
+    font-size: 12px;
+    line-height: 1.25;
+    height: 35px;
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      height: 49px;
+      font-size: 14px;
+      line-height: 1.21;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    @media screen and (min-width: 1280px) {
+      height: 49px;
+      font-size: 14px;
+      line-height: 1.21;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+}
