@@ -5,8 +5,15 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 // @import './example';
-@import './partials/vars';
+@use './partials/vars' as *;
 @import './partials/commons';
 @import './partials/button';
 @import './partials/container';
 @import './partials/section';
+@import './partials/blog';
+@import './partials/header';
+@import './partials/mobile-menu';
+@import './partials/navigation';
+@import './partials/label';
+@import './partials/modal-contact';
+@import './partials/modal-sub';
