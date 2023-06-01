@@ -16,6 +16,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- aos animation  script-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- swiper js script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </head>
   <body>
     <include src="./partials/header.html"></include>
@@ -33,14 +41,18 @@
     <script src="./index.js" type="module"></script>
     <script src="./js/modal-contact.js"></script>
     <script src="./js/modal-sub.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script src="./js/mobile-menu.js"></script>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
     <!-- <include src="./partials/example.html"></include> -->
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
