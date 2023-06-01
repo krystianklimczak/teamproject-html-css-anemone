@@ -4,19 +4,64 @@
     <div class="container">
         <!-- title h2 -->
         <h2 class="section__title">blog</h2>
-        <!-- slider -->
-        <div class="carousel">
-            <img class="carousel__picture" src="./images/demo.jpg" alt="">
-            <img class="carousel__picture" src="./images/demo.jpg" alt="">
-            <img class="carousel__picture" src="./images/demo.jpg" alt="">
-        </div>
-        <!-- pagination -->
-        <div class="carousel__pagination">
-            <div class="prev"> &lt; </div>
-            <div class="next"> &gt; </div>
+
+
+        <!-- Slider main container -->
+        <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class=" swiper-slide">
+                    <img src="./images/blog-flowers-green-d@1x.jpg" width="390" height="421" alt="demo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/blog-flowers-pink-d@1x.jpg" width="390" height="421" alt="demo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/blog-flowers-blue-d@1x.jpg" width="390" height="421" alt="demo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/blog-flowers-orange-d@1x.jpg" width="390" height="421" alt="demo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/blog-flowers-red-d@1x.jpg" width="390" height="421" alt="demo">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/blog-flowers-yellow-d@1x.jpg" width="390" height="421" alt="demo">
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
 
-        <p class="blog__caption">Follow to our newsletter</p>
-        <button class="button button--subscribe blog__button" data-modal-sub-open>Subscribe</button>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 31,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        </script>
+
+        <!-- <picture class="carousel">
+
+            <img class="carousel__picture" src="./images/demo.jpg" alt="demo">
+            <img class="carousel__picture" src="./images/demo.jpg" alt="demo">
+            <img class="carousel__picture" src="./images/demo.jpg" alt="demo">
+
+        </picture> -->
+
+
+        <p data-aos="new-animation" class="blog__caption">Follow to our newsletter</p>
+        <button data-aos="fade-up" class="button button--subscribe blog__button" data-modal-sub-open>Subscribe</button>
     </div>
 </section>
