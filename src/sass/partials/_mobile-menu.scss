@@ -1,6 +1,4 @@
 .mobile-menu {
-  display: flex;
-  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -22,7 +20,6 @@
     flex-direction: column;
     align-items: center;
     gap: 26px;
-    list-style-type: none;
   }
 
   &__link {
@@ -30,7 +27,6 @@
     font-family: $font-primary;
     font-weight: $fontweight-xs;
     font-size: $fontsize-standard;
-    text-decoration: none;
   }
 
   @media screen and (min-width: 768px) {
@@ -39,11 +35,7 @@
 }
 
 .menu-toggle {
-  height: 24px;
-  width: 24px;
-
   background: none;
-  cursor: pointer;
   border: none;
   outline: none;
 
