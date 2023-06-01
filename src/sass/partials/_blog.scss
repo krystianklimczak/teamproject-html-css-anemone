@@ -75,3 +75,21 @@
         gap: 30px;
     }
 }
+
+// animation aos
+[data-aos="new-animation"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+  
+    &.aos-animate {
+      opacity: 1;
+    }
+//   tablet and wider vp
+    @media screen and (min-width: 768px) {
+      transform: translateX(100px);
+  
+      &.aos-animate {
+        transform: translateX(0);
+      }
+    }
+  }
