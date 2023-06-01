@@ -1,0 +1,10 @@
+.navigation {
+  &__list {
+    display: flex;
+    gap: 24px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
