@@ -1,0 +1,58 @@
+.about {
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-top: 32px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      gap: 54px;
+      padding-top: 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      flex-direction: row;
+      gap: 90px;
+      padding-top: 26px;
+    }
+  }
+
+  &__descritpion {
+    width: 288px;
+    height: 140px;
+    top: 61px;
+    font-family: $font-primary;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-text-main;
+
+    @media screen and (min-width: 768px) {
+      width: 322px;
+      height: 168px;
+      top: 110px;
+      font-family: $font-primary;
+      font-size: 20px;
+      line-height: 24px;
+      color: $color-text-main;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 510px;
+      height: 135px;
+      top: 174px;
+      font-family: $font-primary;
+      font-size: 22px;
+      line-height: 27px;
+      color: $color-text-main;
+    }
+  }
+}
+/*zmienne które sa zastosowane  
+Font-family X3
+color       X3
+*/
