@@ -1,4 +1,7 @@
 .about {
+  &__picture {
+    width: 100%;
+  }
   &__box {
     display: flex;
     flex-direction: column;
