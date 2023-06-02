@@ -5,50 +5,42 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
-    margin-top: 32px;
+
+    height: auto;
 
     @media screen and (min-width: 768px) {
-      display: flex;
       flex-direction: row;
       gap: 54px;
-      margin-top: 30px;
     }
 
     @media screen and (min-width: 1280px) {
-      display: flex;
       flex-direction: row;
       gap: 90px;
-      margin-top: 26px;
     }
   }
 
   &__descritpion {
-    width: 288px;
-    height: 140px;
-    top: 61px;
     font-family: $font-primary;
     font-size: 16px;
     line-height: 20px;
     color: $color-text-main;
 
     @media screen and (min-width: 768px) {
-      width: 322px;
-      height: 168px;
-      top: 110px;
       font-family: $font-primary;
       font-size: 20px;
       line-height: 24px;
       color: $color-text-main;
+      width: auto;
+      max-width: 322;
     }
 
     @media screen and (min-width: 1280px) {
-      width: 510px;
-      height: 135px;
-      top: 174px;
       font-family: $font-primary;
       font-size: 22px;
       line-height: 27px;
       color: $color-text-main;
+      width: auto;
+      max-width: 510px;
     }
   }
 }
