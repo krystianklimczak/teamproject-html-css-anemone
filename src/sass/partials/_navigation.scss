@@ -8,4 +8,12 @@
   @media screen and (min-width: 768px) {
     display: block;
   }
+  &__item {
+    font-family: $font-primary;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  &__link {
+    color: $color-text-main;
+  }
 }
