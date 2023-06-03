@@ -1,25 +1,42 @@
 <section id="hero" class="hero">
   <div class="hero-container">
-    <h1 class="hero-title">ANEMONE</h1>
-    <h2 class="hero-badge">flower studio</h2>
+    <h1 class="hero-title">anemone</h1>
+    <p class="hero-badge">flower studio</p>
     <button class="hero-btn" type="button" data-modal-open>
       <svg class="hero-btn-icon">
-        <use class="hero-btn-txt hero-btn-icon-mob"></use>
-        <use class="hero-btn-txt hero-btn-icon-tab"></use>
-        <use class="hero-btn-txt hero-btn-icon-desk"></use>
-        <use class="hero-btn-arrow"></use>
+        <use class="hero-btn-txt hero-btn-icon-mob" href="./images/icons.svg#icon-shopnow-m"></use>
+        <use class="hero-btn-txt hero-btn-icon-tab" href="./images/icons.svg#icon-shopnow-t"></use>
+        <use class="hero-btn-txt hero-btn-icon-desk" href="./images/icons.svg#icon-shopnow-d"></use>
+        <use class="hero-btn-arrow" href="./images/icons.svg#btn-arrow"></use>
       </svg>
     </button>
   </div>
   <div class="hero-shape">
     <picture>
-      <source media="(min-width: 1280px)" type="image/webp" />
-      <source media="(min-width: 1280px)" type="image/jpeg" />
-      <source media="(min-width: 768px)" type="image/webp" />
-      <source media="(min-width: 768px)" type="image/png" />
-      <source media="(max-width: 767px)" type="image/webp" />
-      <source media="(max-width: 767px)" type="image/png" />
-      <img class="hero-img" alt="Flower studio preview" loading="lazy" />
+      <source
+        media="(min-width: 1280px)"
+        srcset="./images/hero-d@1x.jpg, ./images/hero-d@2x.jpg"
+        type="image/jpeg"
+      />
+
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/hero-t@1x.jpg, ./images/hero-t@2x.jpg"
+        type="image/jpeg"
+      />
+
+      <source
+        media="(max-width: 767px)"
+        srcset="./images/hero-m@1x.jpg, ./images/hero-m@2x.jpg"
+        type="image/jpeg"
+      />
+
+      <img
+        class="hero-img"
+        src="./images/hero-m@1x.jpg"
+        alt="Flower studio preview"
+        loading="lazy"
+      />
     </picture>
   </div>
 </section>
