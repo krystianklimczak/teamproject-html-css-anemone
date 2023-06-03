@@ -1,8 +1,18 @@
 .header {
-    padding-top: 16px;
-    &__box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 2;
+  &__box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__contact {
+    display: flex;
+    gap: 16px;
+  }
 }

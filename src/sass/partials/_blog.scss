@@ -65,11 +65,11 @@
       opacity: 1;
     }
 //   tablet and wider vp
-    @media screen and (min-width: 768px) {
-      transform: translateX(100px);
+    // @media screen and (min-width: 768px) {
+    //   transform: translateX(100px);
   
-      &.aos-animate {
-        transform: translateX(0);
-      }
-    }
+    //   &.aos-animate {
+    //     transform: translateX(0);
+    //   }
+    // }
   }
