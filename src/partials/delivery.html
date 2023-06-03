@@ -2,7 +2,7 @@
 <section class="section delivery">
   <div class="container">
     <h2 class="section__title">DELIVERY</h2>
-    <ul class=>
+    <ul class="section__listt">
       <li class="delivery__list">
         <spam class="delivery__list--number">1</spam>
         <p class="delivery__list--text">Choose your bouquet and make an order on website</p>
@@ -27,8 +27,23 @@
     </ul>
   </div>
   <picture class="delivery__picture">
-    <source media="(max-width:767px)" srcset="./images/delivery-m@1x.jpg" />
-    <source media="(max-width:1279px) " srcset="./images/delivery-t@1x.jpg" />
-    <img src="./images/delivery-d@1x.jpg" alt="kwiaty" />
+    <picture>
+      <source
+        srcset="./images/delivery-d@1x.jpg 1x, ./images/delivery-d@2x.jpg 2x"
+        media="(min-width:1280px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="./images/delivery-t@1x.jpg 1x, ./images/delivery-t@2x.jpg 2x"
+        media="(min-width:768px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="./images/delivery-m@1x.jpg 1x, ./images/delivery-m@2x.jpg 2x"
+        media="(max-width:767.59px)"
+        type="image/jpeg"
+      />
+      <img src="./images/delivery-d@1x.jpg" alt="zdjecie kwiatów" width="1280" height="391" />
+    </picture>
   </picture>
 </section>
