@@ -11,6 +11,7 @@
   transition-property: opacity, background-color, visibility;
   transition-duration: 250ms;
   z-index: 3;
+
   &__box {
     position: absolute;
     display: flex;
