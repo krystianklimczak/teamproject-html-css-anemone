@@ -1,9 +1,9 @@
 .section {
-  padding-bottom: 60px;
-  padding-top: 71px;
+  
+ padding-top: 71px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 100px;
+    padding-top: 100px;
   }
 
   &__title {
@@ -28,7 +28,7 @@
             display: inline-block;
         }
   // mobile
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 768px){
       margin-bottom: 32px; 
     }
   // tablet

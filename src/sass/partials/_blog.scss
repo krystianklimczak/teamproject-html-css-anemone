@@ -1,4 +1,8 @@
 .blog {
+  padding-bottom:60px;
+  @media (min-width:768px){
+    padding-bottom:100px;
+  }
 
     // caption under carousel
     &__caption {

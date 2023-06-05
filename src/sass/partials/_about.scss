@@ -1,6 +1,12 @@
 .about {
   &__picture {
-    width: 100%;
+    max-width:288px;
+    @media screen and (min-width:768px){
+max-width:100%;
+    }
+  }
+  &__title{
+    margin-bottom: 30px;
   }
   &__box {
     display: flex;
@@ -27,6 +33,8 @@
     font-size: 16px;
     line-height: 20px;
     color: $color-text-main;
+    max-width:288px;
+    
 
     @media screen and (min-width: 768px) {
       font-family: $font-primary;
@@ -35,6 +43,7 @@
       color: $color-text-main;
       width: auto;
       max-width: 322;
+      
     }
 
     @media screen and (min-width: 1280px) {
