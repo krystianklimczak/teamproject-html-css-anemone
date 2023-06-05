@@ -1,6 +1,7 @@
 .about {
   &__picture {
-    max-width:288px;
+    // max-width:288px;
+    width: 100%;
     @media screen and (min-width:768px){
 max-width:100%;
     }
@@ -33,7 +34,7 @@ max-width:100%;
     font-size: 16px;
     line-height: 20px;
     color: $color-text-main;
-    max-width:288px;
+    // max-width:288px;
     
 
     @media screen and (min-width: 768px) {
