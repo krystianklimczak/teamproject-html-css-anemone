@@ -61,7 +61,7 @@
       padding-right: 40px;
     }
 
-    & ~ #success {
+    & ~ .success {
       opacity: 1;
       visibility: visible;
       fill: $color-validation-success;
@@ -80,7 +80,7 @@
       padding-right: 40px;
     }
 
-    & ~ #error {
+    & ~ .error {
       opacity: 1;
       visibility: visible;
       fill: $color-validation-denied;
