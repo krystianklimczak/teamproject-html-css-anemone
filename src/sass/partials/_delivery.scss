@@ -2,8 +2,55 @@
   &__image {
     margin-right: auto;
     margin-left: auto;
-    
+
     height: auto;
+  }
+  &__description {
+    font-family: $font-primary;
+    font-weight: $fontweight-s;
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 80%;
+
+    color: $color-logo;
+
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+      line-height: 29px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 32px;
+      line-height: 39px;
+    }
+  }
+  &__number {
+    font-family: $font-primary;
+
+    font-weight: $fontweight-s;
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 8px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: $color-logo solid 1px;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      width: 64px;
+      height: 64px;
+      margin-right: 20px;
+
+      font-size: 26px;
+      line-height: 32px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 58px;
+    }
   }
   &__list {
     display: flex;
@@ -26,54 +73,5 @@
         margin-bottom: 69px;
       }
     }
-
-    &--number {
-      font-family: $font-primary;
-
-      font-weight: $fontweight-s;
-      font-size: 20px;
-      line-height: 24px;
-      margin-right: 8px;
-      display: flex;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      border: $color-logo solid 1px;
-
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-
-      @media screen and (min-width: 768px) {
-        width: 64px;
-        height: 64px;
-        margin-right: 20px;
-
-        font-size: 26px;
-        line-height: 32px;
-      }
-      @media screen and (min-width: 1280px) {
-        margin-right: 58px;
-      }
-    }
-    &--text {
-      font-family: $font-primary;
-      font-weight: $fontweight-s;
-      font-size: 14px;
-      line-height: 17px;
-      max-width: 80%;
-
-      color: $color-logo;
-
-      @media screen and (min-width: 768px) {
-        font-size: 24px;
-        line-height: 29px;
-      }
-      @media screen and (min-width: 1280px) {
-        font-size: 32px;
-        line-height: 39px;
-      }
-    }
   }
-  
 }
