@@ -11,28 +11,40 @@
       please fill in your contact details. We will call you back.
     </p>
     <form class="modal-contact__form">
-      <label class="label">
-        Name
+      <div class="input-wrapper">
         <input
-          class="label__input"
+          class="input"
           type="text"
           name="name"
           placeholder="Your name"
           pattern="\w{3,16}"
           required
         />
-      </label>
-      <label class="label modal-contact__label">
-        Email
+        <label class="input__label" for="name">Name</label>
+        <svg class="input__icon" id="success">
+          <use href="./images/icons.svg#icon-form-sucess"></use>
+        </svg>
+        <svg class="input__icon" id="error">
+          <use href="./images/icons.svg#icon-form-error"></use>
+        </svg>
+      </div>
+      <div class="input-wrapper modal-contact__input-wrapper">
         <input
-          class="label__input"
+          class="input"
           type="email"
           name="contact-email"
           placeholder="Your email"
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           required
         />
-      </label>
+        <label class="input__label" for="email">Email</label>
+        <svg class="input__icon" id="success">
+          <use href="./images/icons.svg#icon-form-sucess"></use>
+        </svg>
+        <svg class="input__icon" id="error">
+          <use href="./images/icons.svg#icon-form-error"></use>
+        </svg>
+      </div>
       <button class="button modal-contact__button" type="submit">Send</button>
     </form>
   </div>

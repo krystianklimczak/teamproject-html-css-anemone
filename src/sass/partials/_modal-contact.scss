@@ -89,16 +89,16 @@
       line-height: 1.25;
     }
   }
-  &__label {
+  &__input-wrapper {
     margin-top: 14px;
     margin-bottom: 24px;
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       margin-top: 24px;
-      margin-bottom: 24px;
+      margin-bottom: 38px;
     }
     @media screen and (min-width: 1280px) {
       margin-top: 24px;
-      margin-bottom: 24px;
+      margin-bottom: 38px;
     }
   }
   &__button {
@@ -112,13 +112,11 @@
     transition-duration: 250ms;
     border-radius: 8px;
     @media screen and (min-width: 768px) and (max-width: 1279px) {
-      margin-top: 14px;
       height: 50px;
       font-size: 18px;
       line-height: 1.22;
     }
     @media screen and (min-width: 1280px) {
-      margin-top: 14px;
       height: 50px;
       font-size: 18px;
       line-height: 1.22;
