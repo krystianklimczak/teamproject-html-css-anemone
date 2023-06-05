@@ -95,7 +95,7 @@
     border-color: rgb(215, 215, 215);
 
     & ~ .input__icon {
-      display: none;
+      visibility: hidden;
       opacity: 0;
     }
 
