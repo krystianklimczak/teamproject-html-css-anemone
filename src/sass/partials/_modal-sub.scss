@@ -118,22 +118,27 @@
     font-size: 14px;
     line-height: 1.21;
     font-weight: $fontweight-m;
-    margin-top: 18px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: opacity, background-color, visibility;
     transition-duration: 250ms;
     border-radius: 8px;
     @media screen and (min-width: 768px) and (max-width: 1279px) {
-      margin-top: 28px;
       height: 50px;
       font-size: 18px;
       line-height: 1.22;
     }
     @media screen and (min-width: 1280px) {
-      margin-top: 28px;
       height: 50px;
       font-size: 18px;
       line-height: 1.22;
+    }
+  }
+
+  &__input-wrapper {
+    margin-bottom: 18px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 28px;
     }
   }
 }

@@ -27,17 +27,23 @@
         box.
       </p>
       <form class="modal-sub__form">
-        <label class="label">
-          Email
+        <div class="input-wrapper modal-sub__input-wrapper">
           <input
-            class="label__input"
+            class="input"
             type="email"
-            name="sub-email"
-            placeholder="Your emial"
+            name="contact-email"
+            placeholder="Your email"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             required
           />
-        </label>
+          <label class="input__label" for="email">Email</label>
+          <svg class="input__icon success">
+            <use href="./images/icons.svg#icon-form-sucess"></use>
+          </svg>
+          <svg class="input__icon error">
+            <use href="./images/icons.svg#icon-form-error"></use>
+          </svg>
+        </div>
         <button class="button modal-sub__button" type="submit">Subscribe</button>
       </form>
     </div>
