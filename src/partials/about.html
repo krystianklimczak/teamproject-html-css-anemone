@@ -1,6 +1,6 @@
 <section class="section about" id="about">
   <div class="container">
-    <h2 class="section__title">ABOUT</h2>
+    <h2 class="section__title about__title">ABOUT</h2>
     <div class="about__box">
       <p class="about__descritpion">
         We are a minimalistic flower studio. We love people and flowers. Therefore, every day we
@@ -8,8 +8,10 @@
         create is unique as you are.
       </p>
       <picture class="about__picture">
-        <source media="(max-width:767px)" srcset="./images/about-m@1x.jpg" />
-        <source media="(max-width:1279px) " srcset="./images/about-t@1x.jpg" />
+        <source media="(min-width:1280px)" srcset="./images/about-d@1x.jpg 1x, ./images/about-d@2x.jpg 2x" type="image/jpeg"/>
+        
+        <source media="(min-width:768px) " srcset="./images/about-t@1x.jpg 1x, ./images/about-t@2x.jpg 2x" type="image/jpeg"/>
+        <source media="(max-width:767.59px)" srcset="./images/about-m@1x.jpg 1x, ./images/about-m@2x.jpg 2x" type="image/jpeg"/>
         <img src="./images/about-d@1x.jpg" alt="kwiaty" width="100%"/>
       </picture>
     </div>
