@@ -6,7 +6,7 @@
         <h2 class="section__title">blog</h2>
 
 
-        <!-- Slider main container -->
+        <!-- Swiper main container -->
         <div class="swiper mySwiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -62,30 +62,85 @@
                     <img src="./images/blog-flowers-yellow-d@1x.jpg" width="390" height="421" alt="blog-flowers-yellow">
                 </picture>
 
-
+                <!-- green flowers -->
+                <picture class=" swiper-slide">
+                    <source srcset="./images/blog-flowers-green-d@1x.jpg 1x, ./images/blog-flowers-green-d@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 1280px)">
+                    <source srcset="./images/blog-flowers-green-t@1x.jpg 1x, ./images/blog-flowers-green-t@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 768px)">
+                    <source srcset="./images/blog-flowers-green-m@1x.jpg 1x, ./images/blog-flowers-green-m@2x.jpg 2x"
+                        type="image/jpeg" media="(max-width: 767px)">
+                    <img src="./images/blog-flowers-green-d@1x.jpg" width="390" height="421" alt="blog-flowers-green">
+                </picture>
+                <!-- pink flowers -->
+                <picture class=" swiper-slide">
+                    <source srcset="./images/blog-flowers-pink-d@1x.jpg 1x, ./images/blog-flowers-pink-d@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 1280px)">
+                    <source srcset="./images/blog-flowers-pink-t@1x.jpg 1x, ./images/blog-flowers-pink-t@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 768px)">
+                    <source srcset="./images/blog-flowers-pink-m@1x.jpg 1x, ./images/blog-flowers-pink-m@2x.jpg 2x"
+                        type="image/jpeg" media="(max-width: 767px)">
+                    <img src="./images/blog-flowers-pink-d@1x.jpg" width="390" height="421" alt="blog-flowers-pink-t">
+                </picture>
+                <!-- blue flowers -->
+                <picture class=" swiper-slide">
+                    <source srcset="./images/blog-flowers-blue-d@1x.jpg 1x, ./images/blog-flowers-blue_d@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 1280px)">
+                    <source srcset="./images/blog-flowers-blue-t@1x.jpg 1x, ./images/blog-flowers-blue-t@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 768px)">
+                    <source srcset="./images/blog-flowers-blue-m@1x.jpg 1x, ./images/blog-flowers-blue-m@2x.jpg 2x"
+                        type="image/jpeg" media="(max-width: 767px)">
+                    <img src="./images/blog-flowers-blue-d@1x.jpg" width="390" height="421" alt="blog-flowers-blue">
+                </picture>
+                <!-- orange flowers -->
+                <picture class=" swiper-slide">
+                    <source srcset="./images/blog-flowers-orange-d@1x.jpg 1x, ./images/blog-flowers-orange-d@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 1280px)">
+                    <source srcset="./images/blog-flowers-orange-t@1x.jpg 1x, ./images/blog-flowers-orange-t@2x.jpg 2x"
+                        type="image/jpeg" media="(min-width: 768px)">
+                    <source srcset="./images/blog-flowers-orange-m@1x.jpg 1x, ./images/blog-flowers-orange-m@2x.jpg 2x"
+                        type="image/jpeg" media="(max-width: 767px)">
+                    <img src="./images/blog-flowers-orange-d@1x.jpg" width="390" height="421" alt="blog-flowers-orange">
+                </picture>
+            </div>
+            <div class="swiper-button-next">
+                <svg class="blog__arrow">
+                    <use href="images/icons.svg#icon-arrow-right"></use>
+                </svg>
+            </div>
+            <div class="swiper-button-prev">
+                <svg class="blog__arrow">
+                    <use href="images/icons.svg#icon-arrow-left"></use>
+                </svg>
             </div>
 
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
         </div>
-
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
 
         <!-- Initialize Swiper -->
         <script>
             var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 3,
-                spaceBetween: 31,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
+                // Default parameters
+                slidesPerView: 2,
+                spaceBetween: 32,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
                 },
+                // Responsive breakpoints
+                breakpoints: {
+                    // when window width is >= 768px
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 31,
+                    }
+                }
             });
         </script>
         <!-- caption for newsletter -->
-        <p data-aos="new-animation" class="blog__caption">Follow to our newsletter</p>
+        <p data-aos="fade-down" class="blog__caption">Follow to our newsletter</p>
         <button class="button button--subscribe blog__button" data-modal-sub-open>Subscribe</button>
     </div>
 </section>

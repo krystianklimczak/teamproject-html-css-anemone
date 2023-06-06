@@ -1,0 +1,36 @@
+.swiper-button-next {
+  position: absolute;
+  right: 33%;
+  top: 96%;
+  width: 61px;
+}
+.swiper-button-prev {
+  position: absolute;
+  left: 33%;
+  top: 96%;
+  width: 61px;
+}
+@media screen and (min-width: 768px) {
+  .swiper-button-next {
+    right:40%;
+  }
+  .swiper-button-prev {
+    left: 40%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .swiper-button-next {
+    right:44%;
+  }
+  .swiper-button-prev {
+    left: 44%;
+  }
+}
+
+.mySwiper {
+  padding-bottom: 50px;
+}
+
+:root {
+  --swiper-navigation-size: 100px;
+}
