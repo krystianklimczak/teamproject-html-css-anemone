@@ -1,0 +1,16 @@
+.swiper-button-next {
+  position: absolute;
+  right: 45%;
+  top: 96%;
+  width: 61px;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  left: 45%;
+  top: 96%;
+  width: 61px;
+}
+ .mySwiper {
+    padding-bottom: 50px;
+ }
