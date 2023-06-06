@@ -103,8 +103,16 @@
                     <img src="./images/blog-flowers-orange-d@1x.jpg" width="390" height="421" alt="blog-flowers-orange">
                 </picture>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next">
+                <svg class="blog__arrow">
+                    <use href="images/icons.svg#icon-arrow-right"></use>
+                </svg>
+            </div>
+            <div class="swiper-button-prev">
+                <svg class="blog__arrow">
+                    <use href="images/icons.svg#icon-arrow-left"></use>
+                </svg>
+            </div>
 
         </div>
         <!-- Swiper JS -->
@@ -113,13 +121,22 @@
         <!-- Initialize Swiper -->
         <script>
             var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 3,
-                spaceBetween: 30,
+                // Default parameters
+                slidesPerView: 2,
+                spaceBetween: 32,
                 loop: true,
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 },
+                // Responsive breakpoints
+                breakpoints: {
+                    // when window width is >= 768px
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 31,
+                    }
+                }
             });
         </script>
         <!-- caption for newsletter -->

@@ -1,3 +1,8 @@
+// swiper root
+ :root {
+   --swiper-navigation-size: 1200px
+}
+
 .blog {
   padding-bottom:60px;
   @media (min-width:768px){
@@ -32,7 +37,12 @@
      &__button {
         display: block;
         margin: auto;
-    }     
+    }   
+    
+    // swiper arrows 
+    &__arrow {
+      width: 200px;
+    }
 }
 
 // swiper style
@@ -63,7 +73,9 @@
 }
 
 // swiper navigation
-.swiper-button-next {
-  color: $color-text-modal;
-}
 
+// remove default icons
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+  display: none;
+}
