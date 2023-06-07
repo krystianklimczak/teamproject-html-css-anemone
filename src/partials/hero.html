@@ -5,16 +5,22 @@
       <p class="hero__text">flower<br />studio</p>
       <picture>
         <source
-          srcset="./images/hero-m@1x.jpg 1x, ./images/hero-m@2x.jpg 2x"
-          media="(max-width: 767px)"
+          srcset="./images/hero-d@1x.jpg 1x, ./images/hero-d@2x.jpg 2x"
+          media="(min-width: 1280px)"
           type="image/jpeg"
-          sizes="145px"
+          sizes="390px"
         />
         <source
           srcset="./images/hero-t@1x.jpg 1x, ./images/hero-t@2x.jpg 2x"
           media="(min-width: 768px)"
           type="image/jpeg"
           sizes="390px"
+        />
+        <source
+          srcset="./images/hero-m@1x.jpg 1x, ./images/hero-m@2x.jpg 2x"
+          media="(max-width: 767.98px)"
+          type="image/jpeg"
+          sizes="145px"
         />
         <img src="./images/hero-t@1x.jpg" alt="Zdjęcie kwiata" />
       </picture>
