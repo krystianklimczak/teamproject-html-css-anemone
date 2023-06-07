@@ -6,9 +6,22 @@
       </svg>
     </button>
     <picture>
-      <source srcset="./images/modal-m@1x.jpg" media="(max-width: 767px)" />
-      <source srcset="./images/modal-t@1x.jpg" media="(max-width: 1279px)" />
-      <img src="./images/modal-d@1x.jpg" alt="bouquet of flowers" />
+      <source
+        srcset="./images/modal-d@1x.jpg 1x, ./images/modal-d@2x.jpg 2x"
+        media="(min-width: 1280px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="./images/modal-t@1x.jpg 1x, ./images/modal-t@2x.jpg 2x"
+        media="(min-width: 768px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="./images/modal-m@1x.jpg 1x, ./images/modal-m@2x.jpg 2x"
+        media="(max-width: 767.59px)"
+        type="image/jpeg"
+      />
+      <img src="./images/modal-d@1x.jpg" alt="is mentor checking alt's?" />
     </picture>
     <div class="modal-sub__inner-box">
       <h4 class="modal-sub__title">Follow to our newsletter</h4>
